@@ -1,0 +1,9 @@
+.over_wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.info {
+    flex: 1;
+    padding: 20px;
+}

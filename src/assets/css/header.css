@@ -1,0 +1,32 @@
+
+.header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.header_h1 {
+    font-family: Mulish;
+    font-weight: 700;
+    font-size: 24px;
+    color: #252733;
+    line-height: 100%;
+    letter-spacing: 0.3px;
+}
+
+.header_wrapper2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_h5 {
+    font-family: Mulish;
+    font-weight: 600;
+    font-size: 14px;
+    color: #252733;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: right;
+}
