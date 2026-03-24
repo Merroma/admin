@@ -7,14 +7,8 @@ export const routes = [
         path: "/",
         element: <Layout />,
         children: [
-            {
-                index: true,
-                element: <Overview/>
-            },
-            {
-                path: "tickets",
-                element: <Tickets />
-            }
+            { index: true, element: <Overview /> },
+            { path: "tickets", element: <Tickets /> }
         ]
     }
 ]
