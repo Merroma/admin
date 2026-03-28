@@ -21,19 +21,16 @@ function Overview() {
       <Dashboard />
       <div className="info">
         <Header />
-
         <div className="box_wrapper">
-          <Box open={() => setModalOne(true)} />
-          <Box2 open={() => setModalTwo(true)} />
-          <Box3 open={() => setModalThree(true)} />
-          <Box4 open={() => setModalFour(true)} />
+          <Box setModal={setModalOne} />
+          <Box2 setModal={setModalTwo} />
+          <Box3 setModal={setModalThree} />
+          <Box4 setModal={setModalFour} />
         </div>
-
         <Moduls modal={modalOne} setModal={setModalOne} title="Unresolved" value="60" />
         <Moduls modal={modalTwo} setModal={setModalTwo} title="Overdue" value="16" />
         <Moduls modal={modalThree} setModal={setModalThree} title="Open" value="43" />
         <Moduls modal={modalFour} setModal={setModalFour} title="On hold" value="64" />
-
         <Today />
         <Tasks />
       </div>

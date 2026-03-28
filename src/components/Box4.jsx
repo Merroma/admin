@@ -1,6 +1,6 @@
-export default function Box4({ open }) {
+export default function Box4({ setModal }) {
     return (
-        <div className="box_box" onClick={open}>
+        <div className="box_box" onClick={() => setModal(true)}>
             <p className="box_p">On hold</p>
             <h3 className="box_h3">64</h3>
         </div>

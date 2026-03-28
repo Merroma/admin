@@ -1,5 +1,5 @@
 import "../assets/css/moduls.css"
-import { useRef } from "react"
+import { useRef, useEffect } from "react"
 
 export default function Moduls({ modal, setModal, title, value }) {
     const elDverlay = useRef(null)
@@ -9,6 +9,22 @@ export default function Moduls({ modal, setModal, title, value }) {
             setModal(false)
         }
     }
+
+    useEffect(() => {
+        const closeModal = (evt) => {
+            if (evt.key === "Escape") {
+                setModal(false)
+            }
+        }
+
+        if (modal) {
+            window.addEventListener("keyup", closeModal)
+        }
+
+        return () => {
+            window.removeEventListener("keyup", closeModal)
+        }
+    }, [modal])
 
     return (
         <div
